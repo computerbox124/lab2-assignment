@@ -38,4 +38,14 @@ public class SmartAlarm implements Observer {
         System.out.println("SmartAlarm strategy changed to " + mode + ".");
     }
 
+    public void arm ()
+    {
+        armed = true;
+        System.out.println("SmartAlarm is armed now.");
+    }
+
+    public void disarm(){
+        armed = false;
+        System.out.println("SmartAlarm is disarmed now.");
+    }
 }
